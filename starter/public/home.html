@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CSSI Home Page</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script defer src="/__/firebase/8.3.1/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/8.3.1/firebase-database.js"></script>
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+    <script defer src="js/home.js"></script>
+  </head>
+  <body>
+     <h1 class="title has-text-centered mt-6">Enter Your Favorite Songs</h1>
+     <div class="columns is-centered">
+
+      <!-- COLUMN 1 -->
+      <div class="column is-half mt-5">
+
+        <!-- CARD -->
+        <div class="card">
+          <div class="card-content">
+            <div class="content">
+              <p class="title is-4 has-text-centered">What's Your Favorite Song?</p>
+               <input class="input is-medium is-rounded mb-4" type="text" id="song" placeholder="song" autocomplete="username" required />
+               <!--<input class="input is-medium is-rounded mb-4" type="text" id="artist" placeholder="artist name" autocomplete="username" required /> -->
+              <div class = "container">
+              <button id="button3" class="button is-large">Submit</button>
+              </div>
+              </div>
+            <div class = "content" id = "song_display">
+              <p>Your Songs Will Appear Below!</p>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </body>
+</html>
